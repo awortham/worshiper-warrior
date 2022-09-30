@@ -82,5 +82,5 @@ production:
   <<: *default
   database: worshiper_warrior_production
   username: worshiper_warrior
-  password: <%= ENV['worshiper_warrior_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
