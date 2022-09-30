@@ -5,7 +5,6 @@ class MemberResource < Avo::BaseResource
     scope.ransack(name_cont: params[:q], m: "or").result(distinct: false)
   end
 
-  field :id, as: :id
   field :name, as: :text
   field :table_lead, as: :boolean
   field :table, as: :belongs_to
