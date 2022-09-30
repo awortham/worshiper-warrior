@@ -1,13 +1,13 @@
 # For more information regarding these settings check out our docs https://docs.avohq.io
 Avo.configure do |config|
   ## == Routing ==
-  config.root_path = '/admin'
+  config.root_path = "/admin"
 
   # Where should the user be redirected when visting the `/avo` url
   # config.home_path = nil
 
   ## == Licensing ==
-  config.license = 'community' # change this to 'pro' when you add the license key
+  config.license = "community" # change this to 'pro' when you add the license key
   # config.license_key = ENV['AVO_LICENSE_KEY']
 
   ## == Set the context ==
@@ -45,13 +45,13 @@ Avo.configure do |config|
   # config.cache_resources_on_index_view = true
 
   ## == Customization ==
-  # config.app_name = 'Avocadelicious'
+  config.app_name = "Worshiper Warrior"
   # config.timezone = 'UTC'
   # config.currency = 'USD'
   # config.hide_layout_when_printing = false
   # config.full_width_container = false
   # config.full_width_index_view = false
-  # config.search_debounce = 300
+  config.search_debounce = 300
   # config.view_component_path = "app/components"
   # config.display_license_request_timeout_error = true
   # config.disabled_features = []
@@ -60,18 +60,18 @@ Avo.configure do |config|
   # config.buttons_on_form_footers = true
 
   ## == Branding ==
-  # config.branding = {
-  #   colors: {
-  #     background: "248 246 242",
-  #     100 => "#CEE7F8",
-  #     400 => "#399EE5",
-  #     500 => "#0886DE",
-  #     600 => "#066BB2",
-  #   },
-  #   chart_colors: ["#0B8AE2", "#34C683", "#2AB1EE", "#34C6A8"],
-  #   logo: "/avo-assets/logo.png",
-  #   logomark: "/avo-assets/logomark.png"
-  # }
+  config.branding = {
+    # colors: {
+    #   background: "248 246 242",
+    #   100 => "#CEE7F8",
+    #   400 => "#399EE5",
+    #   500 => "#0886DE",
+    #   600 => "#066BB2"
+    # },
+    # chart_colors: ["#0B8AE2", "#34C683", "#2AB1EE", "#34C6A8"],
+    logo: "worshiper_warrior_logo.png",
+    logomark: "worshiper_warrior_logo.png"
+  }
 
   ## == Breadcrumbs ==
   # config.display_breadcrumbs = true
@@ -93,7 +93,7 @@ Avo.configure do |config|
   #     all_tools
   #   end
   # }
-  # config.profile_menu = -> {
-  #   link "Profile", path: "/avo/profile", icon: "user-circle"
-  # }
+  config.profile_menu = -> {
+    link "Profile", path: "/avo/profile", icon: "user-circle"
+  }
 end
