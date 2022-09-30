@@ -6,6 +6,8 @@ class MemberResource < Avo::BaseResource
   end
 
   field :name, as: :text
+  field :most_recent_attendance_date, as: :text, hide_on: :forms
   field :table_lead, as: :boolean
   field :table, as: :belongs_to
+  field :attendances, as: :has_many
 end
